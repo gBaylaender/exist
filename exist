@@ -1,0 +1,16 @@
+//check if exist
+jQuery.fn.exists = function(){return this.length>0;}
+
+$(document).ready(function() {
+
+  //example of application
+	///////////////////////////////////////////////////////////////
+	if ($('a.img-gallery-link').exists()){
+		$('.img-gallery-link').colorbox({
+			rel:'gal',
+			maxWidth:'90%',
+			maxHeight:'90%'
+		});
+	}
+
+});
